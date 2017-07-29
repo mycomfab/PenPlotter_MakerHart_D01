@@ -255,7 +255,7 @@ void main_serial_control(void)
       x = x + dat * 0x100;
       do  {
         dat = Serial.read();
-      } while ( y == -1 );
+      } while ( dat == -1 );
       do  {
         y = Serial.read();
       } while ( y == -1 );
